@@ -1,0 +1,243 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 235, 255);
+}
+
+.logo-topo {
+  width: 400px;
+  margin: 15px 0 0 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-topo {
+  margin: 15px auto 120px;
+}
+
+#title {
+  font-size: 65px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+#p-title {
+  font-size: 30px;
+  color: #767a86;
+  text-align: center;
+}
+
+span {
+  background: linear-gradient(90deg, #8000ff, #8080ff, #0a39dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+.section-topo,
+.div-converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-converter {
+  width: 50%;
+  background-color: white;
+  padding: 150px 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#logo-principal {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: -90px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.currency-valeu {
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.label-converter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 40px 0 40px;
+  gap: 25px;
+  width: 100%;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+#img-converter {
+  width: 70px;
+  margin-bottom: 6px;
+}
+
+.converter {
+  background-color: #ffffff;
+  width: 100%;
+  height: 60px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.converter-br {
+  appearance: none;
+}
+
+option {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  margin: 25px 0 40px;
+  background-color: #8000ff;
+  color: white;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button::after {
+  content: "⤵︎";
+  padding: 0 8px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.result {
+  background-color: rgb(245, 235, 255, 0.6);
+  width: 100%;
+  height: 200px;
+  border: 2px solid #8000ff;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result-title {
+  color: #3f017c;
+  opacity: 0.8;
+}
+
+#result-valeu {
+  margin: 15px 0 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #3f017c;
+}
+
+#result-converter {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #051e7a;
+  color: white;
+  margin-top: 100px;
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo-horizontal-white {
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.footer1,
+.footer2 {
+  width: 50%;
+}
+
+#text-footer {
+  width: 400px;
+  padding-left: 10px;
+  font-size: 19px;
+}
+
+.title-footer {
+  font-size: 25px;
+  padding: 40px 180px 50px 0;
+  text-align: end;
+ 
+}
+
+.tec-text {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.footer2-tec {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+.img-tec {
+  width: 35px;
+}
+
+/* Bandeira do Brasil (BR)
+.flag-br::before {
+  content: "\1F1E7\1F1F7";
+  margin-right: 8px;
+}
+
+/* Bandeira dos Estados Unidos (US) */
+/* .flag-us::before {
+  content: "\1F1FA\1F1F8";
+  margin-right: 8px;
+} */
+
+/* Bandeira da União Europeia (EU) */
+/* .flag-eu::before {
+  content: "\1F1EA\1F1FA";
+  margin-right: 8px;
+}  */

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ExchangeJS - Conversor de Moedas</title>
+</head>
+
+<body>
+    <img class="logo-topo" src="./assents/logo-horizontal.png" alt="logo-exchangeJS">
+
+    <main class="wrapper">
+        <section class="section-topo">
+            <h1 id="title">Converta moedas <br> com <span>rapidez e precisão</span></h1>
+            <p id="p-title">Cotações atualizadas em tempo real para você <br> converter com confiança.</p>
+        </section>
+
+        <div class="div-converter">
+            <img id="logo-principal" src="./assents/img-logo.png" alt="logo-exchangeJS-convertor-de-moedas">
+            <label>
+                Valor
+                <input class="currency-valeu" type="text" placeholder="R$ 1.000,00">
+            </label>
+            <section class="label-converter">
+                <label>
+                    De
+                    <select class="converter converter-br">
+                        <option id="BRL" value="BRL">BRL - Real Brasileiro</option>
+                    </select>
+                </label>
+
+                <img id="img-converter" src="./assents/img-converter.png" alt="imagem-setas-conversão">
+
+                <label>
+                    Para
+                    <select class="converter">
+                        <option id="USD" value="USD">USD - Dólar Americano</option>
+                        <option id="EUR" value="EUR">EUR - Euro</option>
+                    </select>
+                </label>
+            </section>
+            <button>Converter</button>
+            <section class="result">
+                <h3 id="result-title">Resultado</h3>
+                <h1 id="result-valeu">US$ 0.00</h1>
+                <p id="result-converter">1 BRL = 0,00 USD</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer1">
+            <img id="logo-horizontal-white" src="./assents/logo-horizontal-white.png" alt="logo-exchangeJS-white">
+            <p id="text-footer">Um projeto de estudo e portfólio, transformando aprendizado em uma aplicação funcional,
+                moderna e fácil
+                de usar.</p>
+        </section>
+        <section class="footer2">
+            <h3 class="title-footer">Tecnologias</h3>
+            <div class="tec-text">
+                <div class="footer2-tec">
+                    <img class="img-tec" src="./assents/HTML5.png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="footer2-tec">
+                    <img class="img-tec" src="./assents/CSS3.png" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="footer2-tec">
+                    <img class="img-tec" src="./assents/JS.png" alt="">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
