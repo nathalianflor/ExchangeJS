@@ -25,13 +25,19 @@
             <img id="logo-principal" src="./assents/img-logo.png" alt="logo-exchangeJS-convertor-de-moedas">
             <label>
                 Valor
-                <input class="currency-valeu" type="text" placeholder="R$ 1.000,00">
+                <input class="currency-value" type="text" placeholder="R$ 1.000,00">
             </label>
             <section class="label-converter">
                 <label>
                     De
-                    <select class="converter converter-br">
-                        <option id="BRL" value="BRL">BRL - Real Brasileiro</option>
+                    <select class="converter-original">
+                        <option value="BRL">R$ - Real</option>
+                        <option value="ARS">AR$ – Peso Argentino</option>
+                        <option value="USD">$ - Dólar Americano</option>
+                        <option value="EUR"> € - Euro</option>
+                        <option value="JPY">¥ - Iene</option>
+                        <option value="GBP">£ - Libra</option>
+
                     </select>
                 </label>
 
@@ -39,17 +45,21 @@
 
                 <label>
                     Para
-                    <select class="converter">
-                        <option id="USD" value="USD">USD - Dólar Americano</option>
-                        <option id="EUR" value="EUR">EUR - Euro</option>
+                    <select class="currency-converter">
+                        <option value="USD">$ - Dólar Americano</option>
+                        <option value="EUR"> € - Euro</option>
+                        <option value="JPY">¥ - Iene</option>
+                        <option value="GBP">£ - Libra</option>
+                        <option value="BRL">R$ - Real</option>
+                        <option value="ARS">AR$ – Peso Argentino</option>
                     </select>
                 </label>
             </section>
-            <button>Converter</button>
+            <button class="convert-button">Converter</button>
             <section class="result">
                 <h3 id="result-title">Resultado</h3>
-                <h1 id="result-valeu">US$ 0.00</h1>
-                <p id="result-converter">1 BRL = 0,00 USD</p>
+                <h1 id="result-value">US$ 0.00</h1>
+                <p id="result-converter">1 BRL = 0.00 USD</p>
             </section>
         </div>
     </main>
@@ -60,20 +70,23 @@
             <p id="text-footer">Um projeto de estudo e portfólio, transformando aprendizado em uma aplicação funcional,
                 moderna e fácil
                 de usar.</p>
+            <a id="api-attribution" href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">
+                Rates By Exchange Rate API
+            </a>
         </section>
         <section class="footer2">
             <h3 class="title-footer">Tecnologias</h3>
             <div class="tec-text">
                 <div class="footer2-tec">
-                    <img class="img-tec" src="./assents/HTML5.png" alt="">
+                    <img class="img-tec" src="./assents/HTML5.png" alt="image-HTML">
                     <p>HTML</p>
                 </div>
                 <div class="footer2-tec">
-                    <img class="img-tec" src="./assents/CSS3.png" alt="">
+                    <img class="img-tec" src="./assents/CSS3.png" alt="image-CSS">
                     <p>CSS</p>
                 </div>
                 <div class="footer2-tec">
-                    <img class="img-tec" src="./assents/JS.png" alt="">
+                    <img class="img-tec" src="./assents/JS.png" alt="image-JavaScript">
                     <p>JavaScript</p>
                 </div>
             </div>
