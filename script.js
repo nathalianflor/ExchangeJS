@@ -5,6 +5,7 @@ const convertButton = document.querySelector(".convert-button")
 const resultValue = document.querySelector("#result-value")
 const valueCurrencyToday = document.getElementById("result-converter")
 
+inputCurrencyElement.value = ""
 
 let rates = {}
 
@@ -31,7 +32,7 @@ resultValue.innerHTML = "Carregando..."
 getExchangeRates()
 
 function currencyConverter() {
-    const valueConverter = Number(inputCurrencyElement.value)
+    const valueConverter = Number(inputCurrencyElement.value.replace(",", "."))
     const originalCurrency = currencySelectOriginal.value
     const targetCurrency = currencySelectConverter.value
 
